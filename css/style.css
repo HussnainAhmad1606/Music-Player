@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	background-color: #161f51;
 }
 
 #cover {
@@ -21,8 +22,11 @@
 	padding: 10px;
 }
 
-#cover {
-	
+.btn {
+	color: white;
+	padding: 10px;
+	border-radius: 10px;
+	border: 2px solid white;
 }
 
 @keyframes rotate {

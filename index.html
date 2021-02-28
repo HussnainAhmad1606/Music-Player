@@ -9,14 +9,15 @@
 <body>
 	<div id="music">
 		<div id="player">
-			<h2 id="name">Music Name</h2>
-			<h3 id="artist">Artist Name</h3>
+			<h2 id="name">Faded (Original)</h2>
+			<h3 id="artist">Alan Walker</h3>
 			<img src="img/cover.png" id="cover" alt="">
-			<button id="previous">Previous</button>
+
+			<button class="btn" onclick="previousTrack();" id="previous">Previous</button>
 			<div id="action">
-			<button id="play" onclick="playAudio();">Play</button>
+			<button class="btn" id="play" onclick="playAudio();">Play</button>
 			</div>
-			<button id="next">Next</button>
+			<button class="btn" id="next" onclick="nextTrack();">Next</button>
 			<audio id="audio" src="audio/alan.mp3"></audio>
 		</div>
 	</div>
