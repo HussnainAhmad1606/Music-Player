@@ -1,0 +1,35 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#cover {
+	width: 300px;
+	height: 300px;
+}
+
+#player {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 100px
+}
+
+#artist {
+	padding: 10px;
+}
+
+#cover {
+	
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
