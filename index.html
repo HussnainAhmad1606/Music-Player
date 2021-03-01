@@ -9,16 +9,17 @@
 <body>
 	<div id="music">
 		<div id="player">
-			<h2 id="name">Faded (Original)</h2>
-			<h3 id="artist">Alan Walker</h3>
+			<h2 id="name">Bulleya</h2>
+			<h3 id="artist">Amit Mishra, Shilpa Rao</h3>
 			<img src="img/cover.png" id="cover" alt="">
-
-			<button class="btn" onclick="previousTrack();" id="previous">Previous</button>
-			<div id="action">
-			<button class="btn" id="play" onclick="playAudio();">Play</button>
+<div id="controls">
+			<img class="control-button" onclick="previousTrack();" src="img/rewind-button.png" alt="">
+			<section id="action">
+			<img class="control-button" onclick="playAudio();" id="playBtn" src="img/play.png" alt="">
+			</section>
+			<img class="control-button" onclick="nextTrack();" src="img/forward-button.png" alt="">
 			</div>
-			<button class="btn" id="next" onclick="nextTrack();">Next</button>
-			<audio id="audio" src="audio/alan.mp3"></audio>
+			<audio id="audio" src="audio/bulleya.mp3"></audio>
 		</div>
 	</div>
 </body>

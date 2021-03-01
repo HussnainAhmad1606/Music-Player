@@ -8,6 +8,7 @@
 #cover {
 	width: 300px;
 	height: 300px;
+	background: none;
 }
 
 #player {
@@ -15,11 +16,17 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	margin-top: 100px
+	margin-top: 60px
 }
+
+#name {
+	font-size: 40px;
+}
+
 
 #artist {
 	padding: 10px;
+	font-size: 30px;
 }
 
 .btn {
@@ -27,13 +34,35 @@
 	padding: 10px;
 	border-radius: 10px;
 	border: 2px solid white;
+	font-size: 22px;
+	transition: 0.3s ease all;
+	cursor: pointer;
+	margin: 10px;
+}
+
+.btn:hover {
+	background-color: white;
+	color: #161f51;
+}
+
+#controls {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.control-button {
+	width:	70px;
+	height: 70px;
+	margin: 10px 25px;
+	cursor: pointer;
 }
 
 @keyframes rotate {
-	0% {
-		transform: rotate(0deg);
-	}
-	to {
+	50% {
 		transform: rotate(360deg);
+	}
+	100% {
+		transform: rotate(0deg);
 	}
 }
