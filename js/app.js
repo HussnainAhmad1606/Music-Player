@@ -8,16 +8,16 @@ Developer: HussnainAhmad160
 
 // Array of all musics
 var tracks = [
-{
-	src: "audio/bulleya.mp3",
-	artist: "Unknown Artist",
-	track: "Bulleya"
-
-	},
 	{
 	src: "audio/alan.mp3",
 	artist: "Alan Walker",
 	track: "Faded"
+
+	},
+	{
+	src: "audio/Aur Bantai.mp3",
+	artist: "Emiway Banti",
+	track: "Aur Banti"
 
 	},
 	{
@@ -27,10 +27,21 @@ var tracks = [
 
 	},
 	{
-	src: "audio/samjh.mp3",
-	artist: "Arijit Singh",
-	track: "Main tenu Samjhavaan Ki"
-}];
+	src: "audio/kabir.mp3",
+	artist: "Kabir Singh",
+	track: "BGM Ringtone"
+	},
+	{
+	src: "audio/Believer.mp3",
+	artist: "Imagine Dragons",
+	track: "Believer"
+	},
+	{
+	src: "audio/alex.mp3",
+	artist: "Alex & Rus",
+	track: "Дикая львица"
+	},
+];
 
 
 var i = 0;
@@ -38,7 +49,7 @@ var i = 0;
 // Function for playing audio
 const playAudio = () => {
 
-	// Spining motion of music icon
+	// Start Spining motion of music icon
 	let cover = document.getElementById("cover");
 	cover.setAttribute("style", "animation: rotate 10s infinite linear;");
 
@@ -48,7 +59,7 @@ const playAudio = () => {
 
 	// Changing play button to pause button
 	let button = document.getElementById("action");
-	button.innerHTML = `<img class="control-button" onclick="pauseAudio();" id="pauseBtn" src="img/pause.png" alt="">`;
+	button.innerHTML = `<img class="control-button" onclick="pauseAudio();" id="pauseBtn" src="img/icons/pause.png" alt="">`;
 
 
 }
@@ -64,14 +75,14 @@ const  pauseAudio = () => {
 
 	// Changing the pause button to play button
 	let button = document.getElementById("action");
-	button.innerHTML = `<img class="control-button" onclick="playAudio();" id="playBtn" src="img/play.png" alt="">`;
+	button.innerHTML = `<img class="control-button" onclick="playAudio();" id="playBtn" src="img/icons/play.png" alt="">`;
 }
 
 
 // Function for playing next track..
 const nextTrack = () => {
-	if (i == 3) {
-		i = 3;
+	if (i == 5) {
+		i = 0;
 	}
 	else {
 		i += 1;
@@ -100,6 +111,5 @@ const previousTrack = () => {
 
 // If audio is finished, play the next audio
 document.getElementById("audio").addEventListener("ended", function() {
-	console.log("Playing Next Song...");
 	nextTrack();
 });

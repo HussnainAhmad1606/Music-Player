@@ -2,13 +2,15 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	background-color: #161f51;
+	background-color: #e5e6ec;
+	font-family: "Century Gothic";
 }
 
 #cover {
 	width: 300px;
 	height: 300px;
 	background: none;
+	padding: 30px;
 }
 
 #player {
@@ -16,17 +18,24 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	margin-top: 60px
+	margin-top: 30px;
 }
 
 #name {
-	font-size: 40px;
+	font-size: 60px;
+	color: #de9311;
+	letter-spacing: 5px;
+	text-transform: uppercase;
 }
 
 
 #artist {
 	padding: 10px;
-	font-size: 30px;
+	font-size: 40px;
+	color: #de9311;
+	font-weight: 100;
+	letter-spacing: 3px;
+
 }
 
 .btn {
@@ -64,5 +73,16 @@
 	}
 	100% {
 		transform: rotate(0deg);
+	}
+}
+
+
+@media (max-width: 750px) {
+	#artist {
+		font-size: 180%;
+	}
+
+	#name {
+		font-size: 220%;
 	}
 }
