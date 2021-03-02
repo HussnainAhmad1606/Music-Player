@@ -77,6 +77,13 @@
 }
 
 
+#developer {
+	color: #de9311;
+	font-size: 25px;
+	letter-spacing: 4px;
+	margin-top: 20px;
+}
+
 @media (max-width: 750px) {
 	#artist {
 		font-size: 180%;
@@ -85,4 +92,9 @@
 	#name {
 		font-size: 220%;
 	}
+
+	#developer {
+		font-size: 110%;
+	}
 }
+
